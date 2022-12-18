@@ -4,5 +4,9 @@
     "autoload",
     "tailwindcss",
     "umami"
+  ],
+  "conventionalCommits.scopes": [
+    "api",
+    "web",
   ]
 }
