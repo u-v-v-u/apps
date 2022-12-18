@@ -13,3 +13,7 @@ package-lock.json
 yarn.lock
 
 .yarn
+dist
+
+# Annoying >:(
+svelte.config.js

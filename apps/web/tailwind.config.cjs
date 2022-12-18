@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{html,svelte,ts,js}'],
+  content: ['./src/**/*.{html,svelte,ts}'],
   theme: {
     extend: {
       // eslint-disable-next-line @typescript-eslint/no-unused-vars

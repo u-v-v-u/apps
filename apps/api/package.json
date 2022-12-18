@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "build": "tsup src --format cjs",
-    "clean": "rm -rf .turbo && rm -rf dist",
+    "clean": "rm -r .turbo && rm -rf dist",
     "dev": "tsup src --format cjs --watch --onSuccess \"fastify start --port 3001 dist/main.js\"",
     "lint": "prettier --plugin-search-dir --ignore-path=../../.prettierignore --check . && TIMING=1 eslint \"src\"",
     "format": "prettier --plugin-search-dir --write --ignore-path=../../.prettierignore ."

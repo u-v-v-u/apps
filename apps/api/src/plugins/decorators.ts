@@ -1,4 +1,4 @@
-import fp from 'fastify-plugin'
+import fp from 'fastify-plugin';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default fp(async (fastify, _opts) => {
