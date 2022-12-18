@@ -1,4 +1,8 @@
 {
   "nuxt.isNuxtApp": false,
-  "cSpell.words": ["tailwindcss", "umami"]
+  "cSpell.words": [
+    "autoload",
+    "tailwindcss",
+    "umami"
+  ]
 }
