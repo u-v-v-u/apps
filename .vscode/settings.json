@@ -8,5 +8,6 @@
   "conventionalCommits.scopes": [
     "api",
     "web",
+    "database"
   ]
 }
