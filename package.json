@@ -10,7 +10,9 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{svelte,html,css,scss,ts}\""
+    "format": "prettier --write \"**/*.{svelte,html,css,scss,ts}\"",
+    "db:generate": "turbo run db:generate --scope ./packages/database",
+    "db:push": "turbo run db:push --scope ./packages/database"
   },
   "devDependencies": {
     "eslint-config-custom": "workspace:*",
