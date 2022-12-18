@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite dev --port 3000",
+    "clean": "rm -rf .turbo && rm -rf .svelte-kit",
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
