@@ -1,9 +1,10 @@
-import type { FastifyPluginAsync } from 'fastify'
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import type { FastifyPluginAsync } from 'fastify';
 
 const root: FastifyPluginAsync = async (fastify, _opts): Promise<void> => {
   fastify.get('/', async function (_request, _reply) {
-    return { root: true }
-  })
-}
+    return { root: true };
+  });
+};
 
-export default root
+export default root;

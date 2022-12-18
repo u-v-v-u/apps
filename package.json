@@ -13,7 +13,6 @@
     "format": "prettier --write \"**/*.{svelte,html,css,scss,ts}\""
   },
   "devDependencies": {
-    "@types/eslint": "^8",
     "eslint-config-custom": "workspace:*",
     "prettier": "^2.8.1",
     "prettier-plugin-svelte": "^2.9.0",

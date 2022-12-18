@@ -19,5 +19,3 @@ vite.config.ts.timestamp-*
 !.yarn/versions
 
 .vercel
-
-.vercel

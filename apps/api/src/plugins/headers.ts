@@ -1,5 +1,6 @@
 import fp from 'fastify-plugin'
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default fp(async (fastify, _opts) => {
   fastify.addHook('onRequest', (_req, res, done) => {
     res.headers({

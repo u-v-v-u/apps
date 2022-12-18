@@ -1,6 +1,6 @@
-import autoload, { AutoloadPluginOptions } from '@fastify/autoload'
-import type { FastifyPluginAsync } from 'fastify'
-import { join } from 'path'
+import autoload, { AutoloadPluginOptions } from '@fastify/autoload';
+import type { FastifyPluginAsync } from 'fastify';
+import { join } from 'path';
 
 export type AppOptions = Record<string, unknown> & Partial<AutoloadPluginOptions>;
 
@@ -19,5 +19,4 @@ const app: FastifyPluginAsync<AppOptions> = async (fastify, opts): Promise<void>
 };
 
 export default app;
-export { app }
-
+export { app };
