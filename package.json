@@ -10,11 +10,15 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{svelte,html,css,scss,ts}\""
   },
   "devDependencies": {
-    "eslint-config-custom": "*",
-    "prettier": "latest",
+    "@types/eslint": "^8",
+    "eslint": "^8.30.0",
+    "eslint-config-custom": "workspace:*",
+    "prettier": "^2.8.1",
+    "prettier-plugin-svelte": "^2.9.0",
+    "svelte": "^3.55.0",
     "turbo": "latest"
   },
   "engines": {
