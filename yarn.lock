@@ -824,6 +824,7 @@ __metadata:
     eslint: ^8.30.0
     fastify: ^4.10.2
     fastify-cli: ^5.7.0
+    fastify-favicon: ^4.2.0
     fastify-plugin: ^4.4.0
     tsup: ^6.5.0
     typescript: ^4.9.4
@@ -2053,7 +2054,16 @@ eslint-config-turbo@latest:
   languageName: node
   linkType: hard
 
-"fastify-plugin@npm:^4.0.0, fastify-plugin@npm:^4.4.0":
+"fastify-favicon@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "fastify-favicon@npm:4.2.0"
+  dependencies:
+    fastify-plugin: ^4.2.0
+  checksum: 0c0a17ccf358faf0a62966b002e6a41197cda8302c47b08c05874afc5d2a0ffcd015f14542e3ee97a8f7c457e3d0d145f10d2985fd0d79c63d975677291736dc
+  languageName: node
+  linkType: hard
+
+"fastify-plugin@npm:^4.0.0, fastify-plugin@npm:^4.2.0, fastify-plugin@npm:^4.4.0":
   version: 4.4.0
   resolution: "fastify-plugin@npm:4.4.0"
   checksum: f61d6620a24e8c3c9e67305fffe5570d4c0580477fc0f11fd9397b3e11e2b28ea0873e80d2774fee3ad9d70a81a07a83cb0da61e92afc70f6c50bbb3fb91335d
