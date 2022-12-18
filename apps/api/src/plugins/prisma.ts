@@ -12,6 +12,7 @@ export default fp(async (fastify, _opts) => {
   const prisma = new PrismaClient()
 
   await prisma.$connect()
+  fastify.log.info({ prisma: 'connected'})
 
   fastify.decorate('prisma', prisma)
 
