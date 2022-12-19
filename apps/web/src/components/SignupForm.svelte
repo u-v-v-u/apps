@@ -1,17 +1,17 @@
 <script lang="ts">
   import { reporter, ValidationMessage } from '@felte/reporter-svelte';
-  import { createForm } from 'felte';
   import { validator } from '@felte/validator-zod';
+  import { createForm } from 'felte';
   import * as zod from 'zod';
 
   const formSchema = zod.object({
     email: zod.string().email().nonempty(),
-    password: zod.string().nonempty()
+    password: zod.string().nonempty(),
   });
 
   const { form } = createForm({
     onSubmit: (values) => {
-      console.log(values);
+      fetch
     },
     validate: validator({ formSchema }),
     extend: reporter
@@ -22,7 +22,7 @@
   <input type="email" name="email" placeholder="Email" />
 
   <ValidationMessage for="email" let:messages={message}>
-    <span class="form-input-title">{message || ''}</span>
+    <span class="form-input-title">{message}</span>
     <!-- <span slot="placeholder">Enter a Valid Email</span> -->
   </ValidationMessage>
 
