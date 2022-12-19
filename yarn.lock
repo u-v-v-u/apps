@@ -5,6 +5,37 @@ __metadata:
   version: 6
   cacheKey: 8
 
+"@auth/core@npm:0.1.4, @auth/core@npm:^0.1.4":
+  version: 0.1.4
+  resolution: "@auth/core@npm:0.1.4"
+  dependencies:
+    "@panva/hkdf": 1.0.2
+    cookie: 0.5.0
+    jose: 4.11.1
+    oauth4webapi: 2.0.5
+    preact: 10.11.3
+    preact-render-to-string: 5.2.3
+  peerDependencies:
+    nodemailer: 6.8.0
+  peerDependenciesMeta:
+    nodemailer:
+      optional: true
+  checksum: 64854404ea1883e0deb5535b34bed95cd43fc85094aeaf4f15a79e14045020eb944f844defe857edfc8528a0a024be89cbb2a3069dedef0e9217a74ca6c3eb79
+  languageName: node
+  linkType: hard
+
+"@auth/sveltekit@npm:^0.1.6":
+  version: 0.1.6
+  resolution: "@auth/sveltekit@npm:0.1.6"
+  dependencies:
+    "@auth/core": 0.1.4
+  peerDependencies:
+    "@sveltejs/kit": ^1.0.0
+    svelte: ^3.54.0
+  checksum: 921b84fcacd6e6b379d988467bb707478047d8cb1b45ca161119632306c8bef88146779543fef4807b6c0de2e06d7a76f5d8952fe5cd893e55ca35571b0ec09c
+  languageName: node
+  linkType: hard
+
 "@esbuild/android-arm64@npm:0.16.8":
   version: 0.16.8
   resolution: "@esbuild/android-arm64@npm:0.16.8"
@@ -248,44 +279,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@felte/common@npm:1.1.3":
-  version: 1.1.3
-  resolution: "@felte/common@npm:1.1.3"
-  checksum: 92b589610ac8881db9d6c82d3739bd7268198a9311f98429b65bd5ce3f08a65310b2c8a46f2d058df837a30fbfb3698a742c25ee24a55ac243f8c6b5a6071ca8
-  languageName: node
-  linkType: hard
-
-"@felte/core@npm:1.3.6":
-  version: 1.3.6
-  resolution: "@felte/core@npm:1.3.6"
-  dependencies:
-    "@felte/common": 1.1.3
-  checksum: cb4593c8f9e9b3309d31001db41181eaeb2a8c6d47c03447a1cc7fb4972eba5639e33144728060a881b3dd5f5e2cd23b0e689eb40040a312e7a7f143b3e61486
-  languageName: node
-  linkType: hard
-
-"@felte/reporter-svelte@npm:^1.1.4":
-  version: 1.1.4
-  resolution: "@felte/reporter-svelte@npm:1.1.4"
-  dependencies:
-    "@felte/common": 1.1.3
-  peerDependencies:
-    svelte: ^3.31.0
-  checksum: 260f61e79a7b9af3bf79daa0670088a805a947301fb393effe6123dc16a7a6fedae008a4a51535d3ca745e38029fbd15829a761a041888889c689d2dcff8aac6
-  languageName: node
-  linkType: hard
-
-"@felte/validator-zod@npm:^1.0.12":
-  version: 1.0.12
-  resolution: "@felte/validator-zod@npm:1.0.12"
-  dependencies:
-    "@felte/common": 1.1.3
-  peerDependencies:
-    zod: ^3.2.0
-  checksum: 6f3ef174a83ca876255fa3bc9c1173424e4f2b4eb5f64c314e62c0561354831100162a2ed06aa5f526a1617df61981ef5d87276a758a15717dfdfe00abcd5b5c
-  languageName: node
-  linkType: hard
-
 "@gar/promisify@npm:^1.1.3":
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
@@ -404,6 +397,13 @@ __metadata:
     mkdirp: ^1.0.4
     rimraf: ^3.0.2
   checksum: 52dc02259d98da517fae4cb3a0a3850227bdae4939dda1980b788a7670636ca2b4a01b58df03dd5f65c1e3cb70c50fa8ce5762b582b3f499ec30ee5ce1fd9380
+  languageName: node
+  linkType: hard
+
+"@panva/hkdf@npm:1.0.2":
+  version: 1.0.2
+  resolution: "@panva/hkdf@npm:1.0.2"
+  checksum: 75183b4d5ea816ef516dcea70985c610683579a9e2ac540c2d59b9a3ed27eedaff830a43a1c43c1683556a457c92ac66e09109ee995ab173090e4042c4c4bb03
   languageName: node
   linkType: hard
 
@@ -1250,7 +1250,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cookie@npm:^0.5.0":
+"cookie@npm:0.5.0, cookie@npm:^0.5.0":
   version: 0.5.0
   resolution: "cookie@npm:0.5.0"
   checksum: 1f4bd2ca5765f8c9689a7e8954183f5332139eb72b6ff783d8947032ec1fdf43109852c178e21a953a30c0dd42257828185be01b49d1eb1a67fd054ca588a180
@@ -2178,17 +2178,6 @@ eslint-config-turbo@latest:
   languageName: node
   linkType: hard
 
-"felte@npm:^1.2.6":
-  version: 1.2.6
-  resolution: "felte@npm:1.2.6"
-  dependencies:
-    "@felte/core": 1.3.6
-  peerDependencies:
-    svelte: ^3.31.0
-  checksum: 09ed0ac3d39ef2fa662b05b0275e34fcbdf7e39b8795f34121311421796d60f0bae64fd4370d2925b6d6fbb7be42a08f5d3ffadbce24705841846f608cba2e62
-  languageName: node
-  linkType: hard
-
 "file-entry-cache@npm:^6.0.1":
   version: 6.0.1
   resolution: "file-entry-cache@npm:6.0.1"
@@ -2735,6 +2724,13 @@ eslint-config-turbo@latest:
   version: 2.0.0
   resolution: "isexe@npm:2.0.0"
   checksum: 26bf6c5480dda5161c820c5b5c751ae1e766c587b1f951ea3fcfc973bafb7831ae5b54a31a69bd670220e42e99ec154475025a468eae58ea262f813fdc8d1c62
+  languageName: node
+  linkType: hard
+
+"jose@npm:4.11.1":
+  version: 4.11.1
+  resolution: "jose@npm:4.11.1"
+  checksum: cd15cba258d0fd20f6168631ce2e94fda8442df80e43c1033c523915cecdf390a1cc8efe0eab0c2d65935ca973d791c668aea80724d2aa9c2879d4e70f3081d7
   languageName: node
   linkType: hard
 
@@ -3290,6 +3286,13 @@ eslint-config-turbo@latest:
   languageName: node
   linkType: hard
 
+"oauth4webapi@npm:2.0.5":
+  version: 2.0.5
+  resolution: "oauth4webapi@npm:2.0.5"
+  checksum: 32d0cb7b1cca42d51dfb88075ca2d69fe33172a807e8ea50e317d17cab3bc80588ab8ebcb7eb4600c371a70af4674595b4b341daf6f3a655f1efa1ab715bb6c9
+  languageName: node
+  linkType: hard
+
 "object-assign@npm:^4.0.1":
   version: 4.1.1
   resolution: "object-assign@npm:4.1.1"
@@ -3636,6 +3639,24 @@ eslint-config-turbo@latest:
   languageName: node
   linkType: hard
 
+"preact-render-to-string@npm:5.2.3":
+  version: 5.2.3
+  resolution: "preact-render-to-string@npm:5.2.3"
+  dependencies:
+    pretty-format: ^3.8.0
+  peerDependencies:
+    preact: ">=10"
+  checksum: 6e46288d8956adde35b9fe3a21aecd9dea29751b40f0f155dea62f3896f27cb8614d457b32f48d33909d2da81135afcca6c55077520feacd7d15164d1371fb44
+  languageName: node
+  linkType: hard
+
+"preact@npm:10.11.3":
+  version: 10.11.3
+  resolution: "preact@npm:10.11.3"
+  checksum: 9387115aa0581e8226309e6456e9856f17dfc0e3d3e63f774de80f3d462a882ba7c60914c05942cb51d51e23e120dcfe904b8d392d46f29ad15802941fe7a367
+  languageName: node
+  linkType: hard
+
 "prelude-ls@npm:^1.2.1":
   version: 1.2.1
   resolution: "prelude-ls@npm:1.2.1"
@@ -3659,6 +3680,13 @@ eslint-config-turbo@latest:
   bin:
     prettier: bin-prettier.js
   checksum: 4f21a0f1269f76fb36f54e9a8a1ea4c11e27478958bf860661fb4b6d7ac69aac1581f8724fa98ea3585e56d42a2ea317a17ff6e3324f40cb11ff9e20b73785cc
+  languageName: node
+  linkType: hard
+
+"pretty-format@npm:^3.8.0":
+  version: 3.8.0
+  resolution: "pretty-format@npm:3.8.0"
+  checksum: 21a114d43ef06978f8f7f6212be4649b0b094f05d9b30e14e37550bf35c8ca24d8adbca9e5adc4cc15d9eaf7a1e7a30478a4dc37b30982bfdf0292a5b385484c
   languageName: node
   linkType: hard
 
@@ -4872,15 +4900,14 @@ turbo@latest:
   version: 0.0.0-use.local
   resolution: "web@workspace:apps/web"
   dependencies:
-    "@felte/reporter-svelte": ^1.1.4
-    "@felte/validator-zod": ^1.0.12
+    "@auth/core": ^0.1.4
+    "@auth/sveltekit": ^0.1.6
     "@iconify/svelte": ^3.0.1
     "@sveltejs/adapter-auto": ^1.0.0
     "@sveltejs/kit": ^1.0.0
     "@types/eslint": ^8
     autoprefixer: ^10.4.13
     eslint: ^8.30.0
-    felte: ^1.2.6
     postcss: ^8.4.20
     sass: ^1.56.2
     svelte: ^3.54.0
@@ -4891,7 +4918,6 @@ turbo@latest:
     tslib: ^2.4.1
     typescript: ^4.9.3
     vite: ^4.0.0
-    zod: ^3.20.2
   languageName: unknown
   linkType: soft
 
@@ -4979,12 +5005,5 @@ turbo@latest:
   version: 0.1.0
   resolution: "yocto-queue@npm:0.1.0"
   checksum: f77b3d8d00310def622123df93d4ee654fc6a0096182af8bd60679ddcdfb3474c56c6c7190817c84a2785648cdee9d721c0154eb45698c62176c322fb46fc700
-  languageName: node
-  linkType: hard
-
-"zod@npm:^3.20.2":
-  version: 3.20.2
-  resolution: "zod@npm:3.20.2"
-  checksum: 04172f7e9350372684ccd298d4716908edc9113751295b6c4e1b3ea84e2af8997e504b33ba36f4741417bb2a5dc90bfd40501f6b0e7389df10e42a63d6d8366c
   languageName: node
   linkType: hard

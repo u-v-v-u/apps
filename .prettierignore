@@ -17,3 +17,4 @@ dist
 
 # Annoying >:(
 svelte.config.js
+postcss.config.cjs
