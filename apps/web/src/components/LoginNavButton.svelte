@@ -5,9 +5,10 @@
 </script>
 
 {#if $page.data.session}
+  <a href="/dash" class="nav-button">Dashboard</a>
   <button on:click={() => signOut('github')}>Sign Out</button>
 {:else}
-  <button on:click={() => signIn('github')}>Sign In with Github <Icon icon="mdi:github" /></button>
+  <button on:click={() => signIn('github')}>Sign In <Icon icon="mdi:github" /></button>
 {/if}
 
 <style lang="scss">
