@@ -10,8 +10,8 @@ datasource db {
   url               = env("DATABASE_URL")
 }
 
-model Message {
+model messages {
   id      DateTime @id @default(now()) @db.Timestamp
   user    String
-  message String
+  content String
 }
