@@ -8,7 +8,7 @@
   ],
   "conventionalCommits.scopes": [
     "api",
-    "web",
-    "database"
+    "database",
+    "chat"
   ]
 }

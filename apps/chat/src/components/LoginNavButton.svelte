@@ -1,16 +1,23 @@
 <script>
   import { page } from '$app/stores';
-  import { signIn, signOut } from '@auth/sveltekit/client';
+  import { supabaseClient } from '$lib/supabaseClient';
   import Icon from '@iconify/svelte';
+
+  const signIn = () => {
+    supabaseClient.auth.signInWithOAuth({ provider: 'github' })
+  }
 </script>
 
 {#if $page.data.session}
   {#if $page.url.pathname != '/dash'}
     <a href="/dash" class="nav-button">Dashboard</a>
   {/if}
-  <button on:click={() => signOut('github')}>Sign Out</button>
+  <button on:click={() => supabaseClient.auth.signOut()}>Sign Out</button>
 {:else}
-  <button on:click={() => signIn('github')}>Sign In <Icon icon="mdi:github" /></button>
+  <button
+    on:click={() => signIn()}
+    >Sign In <Icon icon="mdi:github" /></button
+  >
 {/if}
 
 <style lang="scss">

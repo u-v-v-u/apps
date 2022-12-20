@@ -424,6 +424,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@supabase/auth-helpers-shared@npm:0.2.3":
+  version: 0.2.3
+  resolution: "@supabase/auth-helpers-shared@npm:0.2.3"
+  peerDependencies:
+    "@supabase/supabase-js": ^2.0.4
+  checksum: c1fdea7b83d07a5dc87550a1cb784d61f33f5adce2118bac69d8a735bfc9a91aee97e7d53f4833bb1420a11c4675d7b2fcd0294aa508d3ba43688543ee414813
+  languageName: node
+  linkType: hard
+
+"@supabase/auth-helpers-sveltekit@npm:^0.8.6":
+  version: 0.8.6
+  resolution: "@supabase/auth-helpers-sveltekit@npm:0.8.6"
+  dependencies:
+    "@supabase/auth-helpers-shared": 0.2.3
+  peerDependencies:
+    "@supabase/supabase-js": ^2.0.4
+  checksum: 1aee88705b3868471cc9656be10a640e5cc852c56aed088426dcde9f4e989742bd020c5b2af17fc83ac9daa65d68e460ccf09cac4e16beb3f71d8922276c1498
+  languageName: node
+  linkType: hard
+
 "@supabase/functions-js@npm:^2.0.0":
   version: 2.0.0
   resolution: "@supabase/functions-js@npm:2.0.0"
@@ -5096,11 +5116,12 @@ turbo@latest:
   languageName: node
   linkType: hard
 
-"web@workspace:apps/web":
+"web@workspace:apps/chat":
   version: 0.0.0-use.local
-  resolution: "web@workspace:apps/web"
+  resolution: "web@workspace:apps/chat"
   dependencies:
     "@iconify/svelte": ^3.0.1
+    "@supabase/auth-helpers-sveltekit": ^0.8.6
     "@supabase/supabase-js": ^2.2.1
     "@sveltejs/adapter-auto": ^1.0.0
     "@sveltejs/kit": ^1.0.0
