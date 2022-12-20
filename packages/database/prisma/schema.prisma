@@ -6,13 +6,12 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
-  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+  provider          = "postgresql"
+  url               = env("DATABASE_URL")
 }
 
-model User {
-  id       String @id // This should be a bas64 encoding of when the user registered @AEDT
-  email    String // This should be hashed for privacy.
-  password String // This should be hashed for security.
+model Message {
+  id      DateTime @id @default(now()) @db.Timestamp
+  user    String
+  message String
 }
