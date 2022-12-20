@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "private": true,
   "scripts": {
-    "dev": "vite dev --port 3000",
+    "dev": "vite dev --port 3000 --host",
     "clean": "rm -r .turbo && rm -rf .svelte-kit",
     "build": "vite build",
     "preview": "vite preview",

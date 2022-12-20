@@ -2,7 +2,7 @@
   import { supabaseClient } from '$lib/supabaseClient';
   import { onDestroy, onMount } from 'svelte';
 
-  type Message = { user: string; message: string; id: Date };
+  type Message = { user: string; content: string; id: Date };
 
   const channel = supabaseClient.channel('global-messages');
   let messages: Array<Message> = [];
@@ -16,9 +16,9 @@
   };
 
   const sendMessage = async () => {
-    const { data } = await supabaseClient.from('Message').insert({
+    const { data } = await supabaseClient.from('messages').insert({
       user: userId,
-      message: currentMessage
+      content: currentMessage
     });
 
     currentMessage = '';
@@ -27,7 +27,7 @@
   onMount(async () => {
     await getCurrentUser();
 
-    const { error, data: preMessages } = await supabaseClient.from('Message').select().limit(10);
+    const { error, data: preMessages } = await supabaseClient.from('messages').select().order('id', { ascending: false }).limit(20);
 
     if (error) {
       console.error(error);
@@ -37,6 +37,15 @@
     console.debug(preMessages);
 
     messages = [...preMessages];
+
+    channel.on(
+      'postgres_changes',
+      { event: 'INSERT', schema: 'public', table: 'messages', filter: '' },
+      (payload) => {
+        console.log(payload)
+        messages = [...messages, payload as unknown as Message];
+      }
+    );
 
     channel.subscribe(async (status, err) => {
       if (err) {
@@ -48,14 +57,6 @@
         console.debug('Connected to channel');
       }
     });
-
-    channel.on(
-      'postgres_changes',
-      { event: 'INSERT', schema: 'public', table: 'Message' },
-      (payload) => {
-        messages = [...messages, { ...(payload as unknown as Message) }];
-      }
-    );
   });
 
   onDestroy(() => {
@@ -65,9 +66,13 @@
 
 <div class="grid grid-row">
   <div class="messages-container justify-start items-start">
+    {#if messages.length > 0}
     {#each messages as message}
-      <p class="message">{message.user} | {message.message}</p>
+      <p class="message">{message.user} | {message.content}</p>
     {/each}
+    {:else}
+      <p class="messages">No messages were sent!</p>
+    {/if}
   </div>
 
   <div class="justify-center items-center">
