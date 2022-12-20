@@ -19,7 +19,7 @@
 </script>
 
 <div class="prose prose-zinc">
-  <div class="w-screen h-screen flex flex-col">
+  <div class="max-w-screen max-h-screen flex flex-col">
     <NavBar />
     <slot />
   </div>

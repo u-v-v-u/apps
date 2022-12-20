@@ -14,6 +14,7 @@
     border: 2px solid;
     border-color: white;
     padding-bottom: 10px;
+    width: 100vw;
   }
 
   a {

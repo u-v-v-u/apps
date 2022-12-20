@@ -9,9 +9,6 @@
 </script>
 
 {#if $page.data.session}
-  {#if $page.url.pathname != '/dash'}
-    <a href="/dash" class="nav-button">Dashboard</a>
-  {/if}
   <button on:click={() => supabaseClient.auth.signOut()}>Sign Out</button>
 {:else}
   <button

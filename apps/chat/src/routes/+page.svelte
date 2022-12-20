@@ -1,8 +1,5 @@
-<div class="flex flex-col h-screen justify-center items-center">
-  <h1>
-    W.I.P.
-    <h1 />
-  </h1>
+<div class="flex flex-col w-screen h-screen justify-center items-center">
+  <h1>A Little Chat App, Made by Us. ♡</h1>
 </div>
 
 <style lang="scss">

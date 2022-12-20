@@ -1224,6 +1224,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chat@workspace:apps/chat":
+  version: 0.0.0-use.local
+  resolution: "chat@workspace:apps/chat"
+  dependencies:
+    "@iconify/svelte": ^3.0.1
+    "@supabase/auth-helpers-sveltekit": ^0.8.6
+    "@supabase/supabase-js": ^2.2.1
+    "@sveltejs/adapter-auto": ^1.0.0
+    "@sveltejs/kit": ^1.0.0
+    "@types/eslint": ^8
+    autoprefixer: ^10.4.13
+    eslint: ^8.30.0
+    postcss: ^8.4.20
+    sass: ^1.56.2
+    svelte: ^3.54.0
+    svelte-check: ^2.9.2
+    svelte-preprocess: ^5.0.0
+    tailwind-config: "workspace:*"
+    tailwindcss: ^3.2.4
+    tslib: ^2.4.1
+    typescript: ^4.9.3
+    vite: ^4.0.0
+  languageName: unknown
+  linkType: soft
+
 "chokidar@npm:>=3.0.0 <4.0.0, chokidar@npm:^3.4.1, chokidar@npm:^3.5.1, chokidar@npm:^3.5.2, chokidar@npm:^3.5.3":
   version: 3.5.3
   resolution: "chokidar@npm:3.5.3"
@@ -5115,31 +5140,6 @@ turbo@latest:
   checksum: ad7a257ea1e662e57ef2e018f97b3c02a7240ad5093c392186ce0bcf1f1a60bbadd520d073b9beb921ed99f64f065efb63dfc8eec689a80e569f93c1c5d5e16c
   languageName: node
   linkType: hard
-
-"web@workspace:apps/chat":
-  version: 0.0.0-use.local
-  resolution: "web@workspace:apps/chat"
-  dependencies:
-    "@iconify/svelte": ^3.0.1
-    "@supabase/auth-helpers-sveltekit": ^0.8.6
-    "@supabase/supabase-js": ^2.2.1
-    "@sveltejs/adapter-auto": ^1.0.0
-    "@sveltejs/kit": ^1.0.0
-    "@types/eslint": ^8
-    autoprefixer: ^10.4.13
-    eslint: ^8.30.0
-    postcss: ^8.4.20
-    sass: ^1.56.2
-    svelte: ^3.54.0
-    svelte-check: ^2.9.2
-    svelte-preprocess: ^5.0.0
-    tailwind-config: "workspace:*"
-    tailwindcss: ^3.2.4
-    tslib: ^2.4.1
-    typescript: ^4.9.3
-    vite: ^4.0.0
-  languageName: unknown
-  linkType: soft
 
 "webidl-conversions@npm:^3.0.0":
   version: 3.0.1
