@@ -1,5 +1,5 @@
 {
-  "name": "@uvvu/api",
+  "name": "@uvvu/apps",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
