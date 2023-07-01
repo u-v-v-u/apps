@@ -243,13 +243,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fastify/helmet@npm:^10.1.0":
-  version: 10.1.0
-  resolution: "@fastify/helmet@npm:10.1.0"
+"@fastify/helmet@npm:^11.0.0":
+  version: 11.0.0
+  resolution: "@fastify/helmet@npm:11.0.0"
   dependencies:
     fastify-plugin: ^4.2.1
-    helmet: ^6.0.0
-  checksum: a2260ea660157a8c55af6a6ad82bcb7999c453fee7b9ff21377c6b2605351dfc8a36788742b7096e1141e83b539aed48ff44a9a5ac08b86257184abb81d22883
+    helmet: ^7.0.0
+  checksum: 36a5d1eb3893ba32f9e421680263f18d9ebea76016a340161ff45b87b9a5a5d74b71626eb8a8da8dfac034ce31197b4af8d0434d8d5593711290493d33797719
   languageName: node
   linkType: hard
 
@@ -954,7 +954,7 @@ __metadata:
   dependencies:
     "@fastify/autoload": ^5.6.0
     "@fastify/cors": ^8.2.0
-    "@fastify/helmet": ^10.1.0
+    "@fastify/helmet": ^11.0.0
     "@fastify/sensible": ^5.2.0
     "@types/eslint": ^8
     "@types/node": ^18.11.17
@@ -2644,10 +2644,10 @@ eslint-config-turbo@latest:
   languageName: node
   linkType: hard
 
-"helmet@npm:^6.0.0":
-  version: 6.0.1
-  resolution: "helmet@npm:6.0.1"
-  checksum: 1ca20d0b7888b6208130bbb50d183e68d53bb5fa0caead2106226d6d53216dfc893b4b5c07528304e342884f75d87702003b80884b065cb5dcbc705fb4a6ad52
+"helmet@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "helmet@npm:7.0.0"
+  checksum: 3622b8b68b7ac4736369fe7717adb5b87ddcdcda7c11c13277d79fb5670acab032e8c971835565b1d2144d234f3e0dbcd327a44249b9e61f0f64c0c753faf1bc
   languageName: node
   linkType: hard
 
