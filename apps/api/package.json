@@ -9,7 +9,7 @@
     "format": "prettier --plugin-search-dir --write --ignore-path=../../.prettierignore ."
   },
   "devDependencies": {
-    "@types/eslint": "^8",
+    "@types/eslint": "^9.0.0",
     "@types/node": "^18.11.17",
     "eslint": "^8.30.0",
     "tsup": "^6.5.0",

@@ -586,13 +586,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:^8":
-  version: 8.4.10
-  resolution: "@types/eslint@npm:8.4.10"
+"@types/eslint@npm:^9.0.0":
+  version: 9.6.1
+  resolution: "@types/eslint@npm:9.6.1"
   dependencies:
     "@types/estree": "*"
     "@types/json-schema": "*"
-  checksum: 21e009ed9ed9bc8920fdafc6e11ff321c4538b4cc18a56fdd59dc5184ea7bbf363c71638c9bdb59fc1254dddcdd567485136ed68b0ee4750948d4e32cb79c689
+  checksum: c286e79707ab604b577cf8ce51d9bbb9780e3d6a68b38a83febe13fa05b8012c92de17c28532fac2b03d3c460123f5055d603a579685325246ca1c86828223e0
   languageName: node
   linkType: hard
 
@@ -956,7 +956,7 @@ __metadata:
     "@fastify/cors": ^8.2.0
     "@fastify/helmet": ^10.1.0
     "@fastify/sensible": ^5.2.0
-    "@types/eslint": ^8
+    "@types/eslint": ^9.0.0
     "@types/node": ^18.11.17
     database: "workspace:*"
     eslint: ^8.30.0
@@ -1233,7 +1233,7 @@ __metadata:
     "@supabase/supabase-js": ^2.2.1
     "@sveltejs/adapter-auto": ^1.0.0
     "@sveltejs/kit": ^1.0.0
-    "@types/eslint": ^8
+    "@types/eslint": ^9.0.0
     autoprefixer: ^10.4.13
     eslint: ^8.30.0
     postcss: ^8.4.20

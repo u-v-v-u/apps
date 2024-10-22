@@ -16,7 +16,7 @@
     "@iconify/svelte": "^3.0.1",
     "@sveltejs/adapter-auto": "^1.0.0",
     "@sveltejs/kit": "^1.0.0",
-    "@types/eslint": "^8",
+    "@types/eslint": "^9.0.0",
     "autoprefixer": "^10.4.13",
     "eslint": "^8.30.0",
     "postcss": "^8.4.20",
