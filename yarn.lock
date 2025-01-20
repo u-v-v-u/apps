@@ -504,14 +504,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/adapter-auto@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@sveltejs/adapter-auto@npm:1.0.0"
+"@sveltejs/adapter-auto@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "@sveltejs/adapter-auto@npm:4.0.0"
   dependencies:
-    import-meta-resolve: ^2.2.0
+    import-meta-resolve: ^4.1.0
   peerDependencies:
-    "@sveltejs/kit": ^1.0.0
-  checksum: e335ece5790091bf656b85085f9cecb730083dd402398424ed3ecb9024278fc4b5345ec9b0a640f1de67156eeb98898036adc81e0d32728fef51ad3c4ce864c1
+    "@sveltejs/kit": ^2.0.0
+  checksum: f12c558336aa08da1683da90f4e16e61daccbc0c91577a6ddb6b1821a4aa71850201149302c506ec8025aab6b79fa5a1d6d5a787ac22e5c58994d7d9268d946f
   languageName: node
   linkType: hard
 
@@ -1231,7 +1231,7 @@ __metadata:
     "@iconify/svelte": ^3.0.1
     "@supabase/auth-helpers-sveltekit": ^0.8.6
     "@supabase/supabase-js": ^2.2.1
-    "@sveltejs/adapter-auto": ^1.0.0
+    "@sveltejs/adapter-auto": ^4.0.0
     "@sveltejs/kit": ^1.0.0
     "@types/eslint": ^8
     autoprefixer: ^10.4.13
@@ -2758,10 +2758,10 @@ eslint-config-turbo@latest:
   languageName: node
   linkType: hard
 
-"import-meta-resolve@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "import-meta-resolve@npm:2.2.0"
-  checksum: 35a012c07bdaaed907ad150021b47a4bd8b2c77c88f02a2c5a15a5cb5c146072a94b6633cc528eaccf187bca12196c0fb2ff44a54b3b2a03bcf200511b3f1e50
+"import-meta-resolve@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "import-meta-resolve@npm:4.1.0"
+  checksum: 6497af27bf3ee384ad4efd4e0ec3facf9a114863f35a7b35f248659f32faa5e1ae07baa74d603069f35734ae3718a78b3f66926f98dc9a62e261e7df37854a62
   languageName: node
   linkType: hard
 
