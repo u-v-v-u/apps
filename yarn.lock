@@ -300,14 +300,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify/svelte@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "@iconify/svelte@npm:3.0.1"
+"@iconify/svelte@npm:^5.0.0":
+  version: 5.2.2
+  resolution: "@iconify/svelte@npm:5.2.2"
   dependencies:
     "@iconify/types": ^2.0.0
   peerDependencies:
-    svelte: ">=3"
-  checksum: 5739aa18e10593b6fdb2bcfe4ea0b719b85c8b12b705674d6f73354347e62961220427017eec5f5a86361790a3cdaf9cda1ab57f08dee76b4bff244c35d00d0e
+    svelte: ">5.0.0"
+  checksum: 97eb45e35a732d5cdc926b1c680f00d5b24ffe30da37122ae24c6310193694f46493599ae923bf39a317b252dd4bac20e2b1f8e50e4d5092cfb1102437f8872c
   languageName: node
   linkType: hard
 
@@ -1228,7 +1228,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "chat@workspace:apps/chat"
   dependencies:
-    "@iconify/svelte": ^3.0.1
+    "@iconify/svelte": ^5.0.0
     "@supabase/auth-helpers-sveltekit": ^0.8.6
     "@supabase/supabase-js": ^2.2.1
     "@sveltejs/adapter-auto": ^1.0.0
