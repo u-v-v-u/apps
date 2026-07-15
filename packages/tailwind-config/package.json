@@ -1,7 +1,7 @@
 {
   "name": "tailwind-config",
   "main": "index.js",
-  "packageManager": "yarn@3.3.0",
+  "packageManager": "yarn@3.8.7",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.8",
     "tailwindcss": "^3.2.4"
