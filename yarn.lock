@@ -772,7 +772,7 @@ __metadata:
   resolution: "@uvvu/apps@workspace:."
   dependencies:
     eslint-config-custom: "workspace:*"
-    prettier: ^2.8.1
+    prettier: ^3.0.0
     prettier-plugin-svelte: ^2.9.0
     svelte: ^3.55.0
     turbo: latest
@@ -3886,12 +3886,12 @@ eslint-config-turbo@latest:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.8.1":
-  version: 2.8.1
-  resolution: "prettier@npm:2.8.1"
+"prettier@npm:^3.0.0":
+  version: 3.9.8
+  resolution: "prettier@npm:3.9.8"
   bin:
-    prettier: bin-prettier.js
-  checksum: 4f21a0f1269f76fb36f54e9a8a1ea4c11e27478958bf860661fb4b6d7ac69aac1581f8724fa98ea3585e56d42a2ea317a17ff6e3324f40cb11ff9e20b73785cc
+    prettier: bin/prettier.cjs
+  checksum: b9728106824ec6f36bf34533252b213f417b724b67947f97f77558c1edfa3e626fb813dfef306fca715e34f349f3d397dfd97fc02dcc50a10a06203211d2294f
   languageName: node
   linkType: hard
 

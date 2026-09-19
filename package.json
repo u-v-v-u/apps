@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "eslint-config-custom": "workspace:*",
-    "prettier": "^2.8.1",
+    "prettier": "^3.0.0",
     "prettier-plugin-svelte": "^2.9.0",
     "svelte": "^3.55.0",
     "turbo": "latest"
