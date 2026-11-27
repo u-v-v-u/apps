@@ -773,7 +773,7 @@ __metadata:
   dependencies:
     eslint-config-custom: "workspace:*"
     prettier: ^2.8.1
-    prettier-plugin-svelte: ^2.9.0
+    prettier-plugin-svelte: ^4.0.0
     svelte: ^3.55.0
     turbo: latest
   languageName: unknown
@@ -3876,13 +3876,13 @@ eslint-config-turbo@latest:
   languageName: node
   linkType: hard
 
-"prettier-plugin-svelte@npm:^2.9.0":
-  version: 2.9.0
-  resolution: "prettier-plugin-svelte@npm:2.9.0"
+"prettier-plugin-svelte@npm:^4.0.0":
+  version: 4.2.0
+  resolution: "prettier-plugin-svelte@npm:4.2.0"
   peerDependencies:
-    prettier: ^1.16.4 || ^2.0.0
-    svelte: ^3.2.0
-  checksum: 2d74a960783a1974a4818ebac25145ee26095c5652a777584b7eb8f08907702160263538396c03dce7f9bcd5b313f914b234eb809ccc1550a5933fc5e919ca88
+    prettier: ^3.0.0
+    svelte: ^5.0.0
+  checksum: 9ed1416fd64fcb2f4a374bf54d6e8e572c1999906bec0793741890e8398e798128294d692293863dd42429fa5d60136cd5472f903098d77c9141cd62a90a85e7
   languageName: node
   linkType: hard
 
